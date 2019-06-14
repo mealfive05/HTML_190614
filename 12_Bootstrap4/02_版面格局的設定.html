@@ -17,14 +17,23 @@
 
   <!-- 如何選取到基數列和偶數列的元素 -->
 </head>
-
+<style>
+  div[class^="col-"]:nth-child(odd){
+    background-color: aqua;
+    height:300px;
+  }
+  div[class^="col-"]:nth-child(even){
+    background-color: red;
+    height: 300px;
+  }
+</style>
 <body>
 
   <!-- 導覽列 -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <!-- .navbar-brand 左上角LOGO -->
     <a class="navbar-brand" href="#">
-      <img src="http://placehold.it/50x50?text=brand" alt="">
+      <img src="http://placehold.it/50x50?text=new" alt="">
     </a>
     <!-- .navbar-toggler 漢堡選單 & nav.navbar-expand-lg 決定漢堡選單出現時機 -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
